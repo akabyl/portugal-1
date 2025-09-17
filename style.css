@@ -275,7 +275,8 @@ img {
 }
 
 .lead-form.glass {
-	width: 440px;
+	max-width: 440px;
+	max-width: 100%;
 	padding: 26px;
 	background: rgba(255, 255, 255, 0.08);
 	backdrop-filter: blur(14px);
@@ -319,4 +320,10 @@ img {
 	transform: scale(1.05);
 	box-shadow: 0 6px 20px rgba(127, 0, 255, 0.5);
 }
-
+@media (max-width: 767px) {
+	.content {
+		flex-direction: column;
+		margin-bottom: 12px;
+	}
+		
+}
